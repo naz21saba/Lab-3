@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaStore — Bootstrap E-commerce Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+
+<nav class="bg-white border-bottom shadow-sm">
+  <div class="container py-3">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none text-dark">
+        <span class="bg-dark text-white fw-bold rounded-3 px-3 py-2">N</span>
+        <span class="fs-4 fw-bold">NexaStore</span>
+      </a>
+
+      <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3">
+        <a href="index.html" class="text-decoration-none text-dark fw-semibold">Home</a>
+        <a href="index.html#products" class="text-decoration-none text-dark fw-semibold">Products</a>
+        <a href="index.html#reviews" class="text-decoration-none text-dark fw-semibold">Reviews</a>
+        <a href="login.html" class="btn btn-outline-dark rounded-pill px-3">Login</a>
+        <a href="signup.html" class="btn btn-dark rounded-pill px-3">Sign Up</a>
+        <a href="cart.html" class="btn btn-primary rounded-pill px-3">Cart 🛒</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="bg-dark text-white">
+  <div class="container py-5">
+    <div class="row align-items-center g-5 py-lg-5">
+
+      <div class="col-lg-6">
+        <span class="badge text-bg-warning rounded-pill px-3 py-2 mb-3">
+          NEW SEASON COLLECTION
+        </span>
+
+        <h1 class="display-3 fw-bold">
+          Everyday products, made easier to shop.
+        </h1>
+
+        <p class="lead text-white-50 mt-3">
+          Shop modern essentials with a clean, simple and responsive Bootstrap store.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a href="#products" class="btn btn-warning btn-lg rounded-pill px-4">Shop Now</a>
+          <a href="signup.html" class="btn btn-outline-light btn-lg rounded-pill px-4">Create Account</a>
+        </div>
+
+        <div class="row g-3 mt-4">
+          <div class="col-4">
+            <div class="border border-secondary rounded-3 p-3 text-center">
+              <div class="fw-bold fs-4">500+</div>
+              <small class="text-white-50">Products</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="border border-secondary rounded-3 p-3 text-center">
+              <div class="fw-bold fs-4">4.8★</div>
+              <small class="text-white-50">Rating</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="border border-secondary rounded-3 p-3 text-center">
+              <div class="fw-bold fs-4">24/7</div>
+              <small class="text-white-50">Support</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+            class="img-fluid"
+            alt="Modern store interior">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- BENEFITS -->
+<section class="py-4 bg-white border-bottom">
+  <div class="container">
+    <div class="row g-3 text-center">
+
+      <div class="col-6 col-md-3">
+        <div class="p-3">
+          <div class="fs-3">🚚</div>
+          <strong>Free Delivery</strong>
+          <div class="small text-secondary">On selected orders</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3">
+          <div class="fs-3">🔒</div>
+          <strong>Secure Payment</strong>
+          <div class="small text-secondary">Safe checkout</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3">
+          <div class="fs-3">↩️</div>
+          <strong>Easy Returns</strong>
+          <div class="small text-secondary">Simple return policy</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3">
+          <div class="fs-3">💬</div>
+          <strong>Customer Help</strong>
+          <div class="small text-secondary">Friendly support</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PRODUCT LISTING -->
+<section id="products" class="py-5">
+  <div class="container">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+      <div>
+        <span class="text-primary fw-bold small">OUR PRODUCTS</span>
+        <h2 class="display-6 fw-bold mb-0">Popular right now</h2>
+      </div>
+      <p class="text-secondary mb-0">
+        Browse a few example products built with Bootstrap cards.
+      </p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+      <!-- PRODUCT 1 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top"
+            alt="Minimal watch">
+
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-2">Accessories</span>
+            <h5 class="card-title fw-bold">Minimal Watch</h5>
+            <p class="card-text text-secondary">
+              Clean everyday watch with a modern minimal design.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <strong class="fs-5">$59</strong>
+              <span class="text-warning">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="card-footer bg-white border-0 pb-3">
+            <a href="cart.html" class="btn btn-dark w-100 rounded-pill">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top"
+            alt="Red sneakers">
+
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-2">Footwear</span>
+            <h5 class="card-title fw-bold">Urban Sneakers</h5>
+            <p class="card-text text-secondary">
+              Comfortable sneakers made for casual everyday use.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <strong class="fs-5">$84</strong>
+              <span class="text-warning">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="card-footer bg-white border-0 pb-3">
+            <a href="cart.html" class="btn btn-dark w-100 rounded-pill">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top"
+            alt="Handbag">
+
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-2">Bags</span>
+            <h5 class="card-title fw-bold">Classic Handbag</h5>
+            <p class="card-text text-secondary">
+              Structured everyday bag with a polished finish.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <strong class="fs-5">$72</strong>
+              <span class="text-warning">★★★★☆</span>
+            </div>
+          </div>
+
+          <div class="card-footer bg-white border-0 pb-3">
+            <a href="cart.html" class="btn btn-dark w-100 rounded-pill">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PRODUCT 4 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top"
+            alt="Headphones">
+
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-2">Electronics</span>
+            <h5 class="card-title fw-bold">Studio Headphones</h5>
+            <p class="card-text text-secondary">
+              Comfortable over-ear headphones with a premium look.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <strong class="fs-5">$96</strong>
+              <span class="text-warning">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="card-footer bg-white border-0 pb-3">
+            <a href="cart.html" class="btn btn-dark w-100 rounded-pill">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-5 bg-white">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="text-primary fw-bold small">CUSTOMER REVIEWS</span>
+      <h2 class="display-6 fw-bold">What shoppers say</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="text-warning mb-3">★★★★★</div>
+            <p>
+              “The layout is simple and shopping feels really easy. I found what I wanted immediately.”
+            </p>
+            <div class="d-flex align-items-center gap-3 mt-4">
+              <img src="https://i.pravatar.cc/80?img=12" class="rounded-circle" width="48" height="48" alt="Ayesha">
+              <div>
+                <strong>Ayesha Khan</strong>
+                <div class="small text-secondary">Verified customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="text-warning mb-3">★★★★★</div>
+            <p>
+              “The product cards look clean and the checkout flow is easy to understand.”
+            </p>
+            <div class="d-flex align-items-center gap-3 mt-4">
+              <img src="https://i.pravatar.cc/80?img=20" class="rounded-circle" width="48" height="48" alt="Hira">
+              <div>
+                <strong>Hira Ahmed</strong>
+                <div class="small text-secondary">Verified customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="text-warning mb-3">★★★★☆</div>
+            <p>
+              “Nice responsive design. The store works well on mobile and desktop.”
+            </p>
+            <div class="d-flex align-items-center gap-3 mt-4">
+              <img src="https://i.pravatar.cc/80?img=47" class="rounded-circle" width="48" height="48" alt="Noor">
+              <div>
+                <strong>Noor Fatima</strong>
+                <div class="small text-secondary">Verified customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© 2026 NexaStore</span>
+      <span class="text-white-50">Bootstrap E-commerce Assignment · No JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

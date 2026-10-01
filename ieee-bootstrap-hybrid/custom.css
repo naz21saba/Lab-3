@@ -1,0 +1,175 @@
+/* Only IEEE-specific styling that Bootstrap cannot express precisely */
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.ieee-badge{
+  width:48px;
+  height:38px;
+  background:#00629b;
+  font-size:13px;
+}
+
+.ieee-blue{
+  background:#00629b;
+}
+
+/* Exact US Letter-style page */
+.paper{
+  width:8.5in;
+  min-height:11in;
+  max-width:100%;
+  margin:0 auto;
+  padding:.56in .62in .55in;
+}
+
+/* IEEE paper typography */
+.copyright-line,
+.paper-title,
+.title-note,
+.author,
+.paper-text,
+.paper-list,
+.section-title,
+.subheading,
+.equation,
+.figure-caption,
+.table-title,
+.paper-table,
+.references,
+.funding{
+  font-family:"Times New Roman",Times,serif;
+}
+
+.copyright-line{
+  font-size:8.5pt;
+  margin-bottom:8px;
+}
+
+.paper-title{
+  font-size:24pt;
+  line-height:1.05;
+  font-weight:normal;
+  margin:0;
+}
+
+.title-note{
+  font-size:8.5pt;
+  margin:4px 0 14px;
+}
+
+.author{
+  font-size:8.5pt;
+  line-height:1.2;
+}
+
+.author strong{
+  font-size:9.5pt;
+  font-weight:normal;
+  margin-bottom:2px;
+}
+
+.author em{
+  font-style:normal;
+  color:#333;
+}
+
+.paper-text{
+  font-size:9pt;
+  line-height:1.15;
+  text-align:justify;
+  margin:0 0 6px;
+}
+
+.paper-list{
+  font-size:9pt;
+  line-height:1.08;
+}
+
+.section-title{
+  font-size:10pt;
+  font-weight:normal;
+  margin:9px 0 5px;
+}
+
+.subheading{
+  font-size:9.5pt;
+  font-weight:normal;
+  margin:7px 0 3px;
+}
+
+.equation{
+  font-size:10pt;
+}
+
+.figure-step{
+  font-family:Arial,sans-serif;
+  font-size:8px;
+}
+
+.figure-caption{
+  font-size:8pt;
+  line-height:1.1;
+}
+
+.table-title{
+  font-size:8pt;
+  line-height:1.15;
+}
+
+.paper-table{
+  font-size:8pt;
+}
+
+.paper-table th,
+.paper-table td{
+  padding:4px 3px;
+  border-top:1px solid #555;
+  border-bottom:1px solid #555;
+}
+
+.references{
+  font-size:8pt;
+  line-height:1.08;
+}
+
+.funding{
+  font-size:7.5pt;
+}
+
+/* Preserve the original responsive paper behavior */
+@media(max-width:800px){
+  .paper{
+    width:100%;
+    padding:34px 24px;
+  }
+}
+
+@media(max-width:520px){
+  .paper-title{
+    font-size:20pt;
+  }
+}
+
+/* Print still behaves like an IEEE sheet */
+@media print{
+  body{
+    background:white!important;
+  }
+
+  header{
+    display:none!important;
+  }
+
+  main{
+    padding:0!important;
+  }
+
+  .paper{
+    width:8.5in;
+    min-height:11in;
+    box-shadow:none!important;
+    border:0!important;
+  }
+}
